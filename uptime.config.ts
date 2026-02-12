@@ -29,7 +29,7 @@ const workerConfig: WorkerConfig = {
       // `target` is a valid URL
       target: 'https://vedatrace.dev',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+      tooltip: 'VedaTrace Dashboard - Simplified Observability Dashboard',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://vedatrace.dev',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -45,7 +45,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://ingest.vedatrace.dev',
+      target: 'https://ingest.vedatrace.dev/health',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'VedaTrace Ingestion Module',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
