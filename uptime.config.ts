@@ -101,7 +101,7 @@ const workerConfig: WorkerConfig = {
 // const maintenances: MaintenanceConfig[] = []
 
 const maintenances: MaintenanceConfig[] = [
-  {
+  // {
     // [Optional] Monitor IDs to be affected by this maintenance
     // monitors: ['foo_monitor', 'bar_monitor'],
     // // [Optional] default to "Scheduled Maintenance" if not specified
@@ -115,7 +115,7 @@ const maintenances: MaintenanceConfig[] = [
     // end: '2050-01-01T00:00:00+08:00',
     // // [Optional] color of the maintenance alert at status page, default to "yellow"
     // color: 'blue',
-  },
+  // },
 ]
 
 // Don't edit this line
