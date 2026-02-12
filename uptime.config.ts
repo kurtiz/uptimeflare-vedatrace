@@ -39,17 +39,35 @@ const workerConfig: WorkerConfig = {
     },
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'vedatrace',
+      id: 'ingest-vedatrace',
       // `name` is used at status page and callback message
-      name: 'VedaTrace Dashboard',
+      name: 'VedaTrace Ingestion Module',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://vedatrace.dev',
+      target: 'https://ingest.vedatrace.dev',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'VedaTrace Dashboard Web App',
+      tooltip: 'VedaTrace Ingestion Module',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://status.vedatrace.dev',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+    },
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'waitlist-vedatrace',
+      // `name` is used at status page and callback message
+      name: 'VedaTrace Waitlist',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://waitlist.vedatrace.dev',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'Join The Waitlist And Newsletter',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://waitlist.vedatrace.dev',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
